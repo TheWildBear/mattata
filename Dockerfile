@@ -5,11 +5,6 @@ ADD ./install/install-debian.sh /srv/bots/mattata/install/install-debian.sh
   
 ENTRYPOINT []
 
-#download required parts
-RUN apt-get update && \  
-    apt-get -qy install apt-utils && \
-    apt-get upgrade && \
-
 #install all requirements for Mattata
 RUN sudo /srv/bots/mattata/install-debian.sh
 
