@@ -11,9 +11,7 @@ RUN apt-get update && \
     apt-get upgrade && \
 
 #install all requirements for Mattata
-WORKDIR /srv/bots/mattata/install
-
-RUN sudo ./install-debian.sh
+RUN sudo /srv/bots/mattata/install-debian.sh
 
 WORKDIR /srv/bot/mattata
 
