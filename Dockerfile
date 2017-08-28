@@ -1,7 +1,7 @@
 #Use alpine as a base image
 FROM alpine:3.5
 
-ADD ./install/install-debian.sh /srv/bots/mattata/install/install-debian.sh
+COPY ./install/install-debian.sh /srv/bots/mattata/install/install-debian.sh
   
 ENTRYPOINT []
 
